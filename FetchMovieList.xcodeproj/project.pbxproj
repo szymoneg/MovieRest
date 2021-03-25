@@ -15,6 +15,8 @@
 		2AB4F438260D144900B9E343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB4F436260D144900B9E343 /* LaunchScreen.storyboard */; };
 		2AB4F441260D157600B9E343 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4F440260D157600B9E343 /* Model.swift */; };
 		2AB4F444260D174F00B9E343 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4F443260D174F00B9E343 /* ApiService.swift */; };
+		2AB4F447260D3F7600B9E343 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4F446260D3F7600B9E343 /* MovieViewModel.swift */; };
+		2AB4F44A260D46AD00B9E343 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4F449260D46AD00B9E343 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2AB4F439260D144900B9E343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB4F440260D157600B9E343 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2AB4F443260D174F00B9E343 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		2AB4F446260D3F7600B9E343 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		2AB4F449260D46AD00B9E343 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				2AB4F439260D144900B9E343 /* Info.plist */,
 				2AB4F440260D157600B9E343 /* Model.swift */,
 				2AB4F443260D174F00B9E343 /* ApiService.swift */,
+				2AB4F446260D3F7600B9E343 /* MovieViewModel.swift */,
+				2AB4F449260D46AD00B9E343 /* MovieTableViewCell.swift */,
 			);
 			path = FetchMovieList;
 			sourceTree = "<group>";
@@ -145,9 +151,11 @@
 			files = (
 				2AB4F430260D144600B9E343 /* ViewController.swift in Sources */,
 				2AB4F444260D174F00B9E343 /* ApiService.swift in Sources */,
+				2AB4F44A260D46AD00B9E343 /* MovieTableViewCell.swift in Sources */,
 				2AB4F42C260D144600B9E343 /* AppDelegate.swift in Sources */,
 				2AB4F42E260D144600B9E343 /* SceneDelegate.swift in Sources */,
 				2AB4F441260D157600B9E343 /* Model.swift in Sources */,
+				2AB4F447260D3F7600B9E343 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
