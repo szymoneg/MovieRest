@@ -18,6 +18,10 @@ class MovieTableViewCell: UITableViewCell {
     
     private var urlString: String = ""
     
+    func setCellWithValuesOf(_ movie: Movie){
+        updateUI(title: movie.title, releaseDate: movie.year, rating: movie.rate, overview: movie.overView, poster: movie.posterImage)
+    }
+    
     private func updateUI(title: String?, releaseDate: String?, rating: Double?, overview: String?, poster: String?){
         self.movieTitle.text = title
         self.movieYear.text = convertDate(releaseDate)
@@ -35,12 +39,28 @@ class MovieTableViewCell: UITableViewCell {
         
         self.moviePoster.image = nil
         
-        
+        getImageDataFromURL(url: posterImageUrl)
         
     }
     
     private func getImageDataFromURL(url: URL){
-        
+        URLSession.shared.dataTask(with: url){ (data, response, error) in
+            if let error = error{
+                print("Error\(error)")
+                return
+            }
+            
+            guard let data = data else {
+                print("empyty data")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data){
+                    self.moviePoster.image = image
+                }
+            }
+        }.resume()
     }
     
     func convertDate(_ date: String?) -> String{
