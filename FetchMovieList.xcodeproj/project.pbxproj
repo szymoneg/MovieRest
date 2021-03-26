@@ -64,19 +64,51 @@
 		2AB4F42A260D144600B9E343 /* FetchMovieList */ = {
 			isa = PBXGroup;
 			children = (
+				2AB4F450260E792000B9E343 /* Controller */,
+				2AB4F44F260E791500B9E343 /* Model */,
+				2AB4F44E260E790000B9E343 /* View */,
+				2AB4F44D260E78F000B9E343 /* Web */,
 				2AB4F42B260D144600B9E343 /* AppDelegate.swift */,
 				2AB4F42D260D144600B9E343 /* SceneDelegate.swift */,
-				2AB4F42F260D144600B9E343 /* MovieViewController.swift */,
-				2AB4F431260D144600B9E343 /* Main.storyboard */,
 				2AB4F434260D144900B9E343 /* Assets.xcassets */,
 				2AB4F436260D144900B9E343 /* LaunchScreen.storyboard */,
 				2AB4F439260D144900B9E343 /* Info.plist */,
-				2AB4F440260D157600B9E343 /* Model.swift */,
-				2AB4F443260D174F00B9E343 /* ApiService.swift */,
-				2AB4F446260D3F7600B9E343 /* MovieViewModel.swift */,
-				2AB4F449260D46AD00B9E343 /* MovieTableViewCell.swift */,
 			);
 			path = FetchMovieList;
+			sourceTree = "<group>";
+		};
+		2AB4F44D260E78F000B9E343 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2AB4F443260D174F00B9E343 /* ApiService.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		2AB4F44E260E790000B9E343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AB4F446260D3F7600B9E343 /* MovieViewModel.swift */,
+				2AB4F431260D144600B9E343 /* Main.storyboard */,
+				2AB4F449260D46AD00B9E343 /* MovieTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AB4F44F260E791500B9E343 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AB4F440260D157600B9E343 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AB4F450260E792000B9E343 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AB4F42F260D144600B9E343 /* MovieViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
